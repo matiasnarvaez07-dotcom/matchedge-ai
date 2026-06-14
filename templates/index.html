@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchEdge AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>⚽ MatchEdge AI</h1>
+        <p>Predicción inteligente de partidos basada en estadísticas y análisis automatizado.</p>
+    </div>
+
+    <div class="card">
+
+        <label>Competición</label>
+        <select>
+            <option>Mundial FIFA</option>
+            <option>Champions League</option>
+            <option>Premier League</option>
+            <option>La Liga</option>
+            <option>Serie A</option>
+            <option>Bundesliga</option>
+        </select>
+
+        <label>Casa de apuestas</label>
+        <select>
+            <option>Betsson</option>
+            <option>Betano</option>
+            <option>Coolbet</option>
+            <option>1xBet</option>
+        </select>
+
+        <label>Equipo local</label>
+        <input type="text" placeholder="Ej: Germany">
+
+        <label>Equipo visitante</label>
+        <input type="text" placeholder="Ej: Curacao">
+
+        <button>
+            Analizar Partido
+        </button>
+
+    </div>
+
+    <div class="results">
+
+        <div class="result-card">
+            <h3>Probabilidad Local</h3>
+            <p>--%</p>
+        </div>
+
+        <div class="result-card">
+            <h3>Empate</h3>
+            <p>--%</p>
+        </div>
+
+        <div class="result-card">
+            <h3>Probabilidad Visitante</h3>
+            <p>--%</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
